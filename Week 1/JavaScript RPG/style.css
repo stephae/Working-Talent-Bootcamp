@@ -1,9 +1,10 @@
 body {
-    background-color: #0a0a23;
+    background-image: url(https://images5.alphacoders.com/798/798722.png);
+    display: flex;
+    align-items: center;
 }
 
 #text {
-    background-color: #0a0a23;
     color: #ffffff;
     padding: 10px;
 }
@@ -11,17 +12,26 @@ body {
 #game {
     max-width: 500px;
     max-height: 400px;
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: #000000;
+    color: #000000;
     margin: 30px auto 0px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#controls,
+#screen img {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+}
+
 #stats {
-    border: 1px solid #0a0a23;
+    border: 1px solid #ffffff;
     padding: 5px;
-    color: #0a0a23;
+    color: #ffffff;
 }
 
 #monsterStats {
@@ -39,7 +49,5 @@ body {
 button {
     cursor: pointer;
     color: #0a0a23;
-    background-color: #feac32;
-    background-image: linear-gradient(#fecc4c, #ffac33);
-    border: 3px solid #feac32;
+    border: 3px solid #ffffff;
 }

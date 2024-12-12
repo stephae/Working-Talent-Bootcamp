@@ -6,6 +6,7 @@ let fighting;
 let monsterHealth;
 let inventory = ["stick"];
 
+var img = document.getElementById("image");
 const button1 = document.querySelector('#button1');
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
@@ -108,14 +109,17 @@ function update(location) {
 
 function goTown() {
     update(locations[0]);
+    img.src = "https://static.wikia.nocookie.net/undertale/images/f/fe/Snowdin_location.png/revision/latest?cb=20160212141711";
 }
 
 function goStore() {
     update(locations[1]);
+    img.src = "https://static.wikia.nocookie.net/undertale-dont-forget/images/9/9a/Snowdin_shopkeeper.png/revision/latest?cb=20210212094955";
 }
 
 function goCave() {
     update(locations[2]);
+    img.src = "https://static.wikia.nocookie.net/undertale/images/6/6c/Waterfall_location_Shyren_room.png/revision/latest?cb=20160211163540";
 }
 
 function buyHealth() {
@@ -164,16 +168,19 @@ function sellWeapon() {
 function fightSlime() {
     fighting = 0;
     goFight();
+    img.src = "https://static.wikia.nocookie.net/undertale/images/8/8a/Moldsmal_battle.gif/revision/latest?cb=20151111030353";
 }
 
 function fightBeast() {
     fighting = 1;
     goFight();
+    img.src = "https://static.wikia.nocookie.net/undertale/images/d/dc/Lesser_Dog_battle_idle.gif/revision/latest?cb=20160108180012";
 }
 
 function fightDragon() {
     fighting = 2;
     goFight();
+    img.src = "https://media1.tenor.com/m/J3GVq0_UGeUAAAAC/undertale-undyne.gif";
 }
 
 function goFight() {
@@ -234,10 +241,12 @@ function defeatMonster() {
 
 function lose() {
     update(locations[5]);
+    img.src = "https://static.wikia.nocookie.net/undertale/images/5/55/Determination_soundtrack.png/revision/latest?cb=20151104164703";
 }
 
 function winGame() {
     update(locations[6]);
+    img.src = "https://static.wikia.nocookie.net/undertale/images/4/4b/True_Pacifist_Route_screenshot_ending_photo.png/revision/latest?cb=20160214150714";
 }
 
 function restart() {
@@ -254,6 +263,7 @@ function restart() {
 
 function easterEgg() {
     update(locations[7]);
+    img.src = "https://static.wikia.nocookie.net/undertale/images/0/0f/Sans_battle_idle.gif/revision/latest?cb=20181110100333";
 }
 
 function pickTwo() {
